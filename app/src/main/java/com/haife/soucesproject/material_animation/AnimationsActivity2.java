@@ -40,12 +40,6 @@ public class AnimationsActivity2 extends BaseDetailActivity {
             public void onTransitionStart(Transition transition) {
 
             }
-
-            @Override
-            public void onTransitionEnd(Transition transition) {
-
-            }
-
             @Override
             public void onTransitionCancel(Transition transition) {
 
@@ -58,9 +52,21 @@ public class AnimationsActivity2 extends BaseDetailActivity {
 
             @Override
             public void onTransitionResume(Transition transition) {
+
+            }
+            @Override
+            public void onTransitionEnd(Transition transition) {
                 getWindow().getEnterTransition().removeListener(this);
                 TransitionManager.go(scene0);
             }
+
+
+
+
+
+
+
+
         });
     }
 
