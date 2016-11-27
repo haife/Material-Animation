@@ -21,8 +21,7 @@
         </activity>
         <activity
             android:name=".TransitionActivity2"
-            android:theme="@style/MaterialAnimations.Red"
-            >
+            android:theme="@style/MaterialAnimations.Red">
         </activity>
         <activity
             android:name=".BaseDetailActivity"
@@ -35,6 +34,12 @@
         <activity
             android:name=".SharedElementActivity"
             android:theme="@style/MaterialAnimations.Blue">
+        </activity>
+        <activity
+            android:name=".AnimationsActivity1"
+            android:theme="@style/MaterialAnimations.Green">
+        </activity>
+        <activity android:name=".AnimationsActivity2">
         </activity>
     </application>
 
