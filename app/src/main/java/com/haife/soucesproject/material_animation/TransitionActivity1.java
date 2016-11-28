@@ -86,11 +86,9 @@ public class TransitionActivity1 extends BaseDetailActivity {
         findViewById(R.id.sample1_button6).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finishAfterTransition();
+               finishAfterTransition();
             }
         });
-
-
     }
 
     private Visibility buildEnterTransition() {

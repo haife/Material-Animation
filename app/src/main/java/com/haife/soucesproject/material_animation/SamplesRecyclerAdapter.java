@@ -53,7 +53,7 @@ public class SamplesRecyclerAdapter extends RecyclerView.Adapter<SamplesRecycler
                         transitionToActivity(AnimationsActivity1.class, sample);
                         break;
                     case 3:
-                        //transitionToActivity(RevealActivity.class, viewHolder, sample, R.string.transition_reveal1);
+                        transitionToActivity(RevealActivity.class, holder, sample, R.string.transition_reveal1);
                         break;
                 }
             }
@@ -85,9 +85,9 @@ public class SamplesRecyclerAdapter extends RecyclerView.Adapter<SamplesRecycler
 
     private void startActivity(Class target, Pair<View, String>[] pairs, Sample sample) {
         Intent i = new Intent(activity, target);
-        ActivityOptionsCompat transitionActivityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(activity, pairs);
         i.putExtra("sample", sample);
-        activity.startActivity(i, transitionActivityOptions.toBundle());
+        ActivityOptionsCompat transitionActivityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(activity, pairs);
+        activity.startActivity(i,transitionActivityOptions.toBundle());
     }
 
 

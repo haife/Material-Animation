@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
       <variable
           name="reveal1Sample"
           type="com.haife.soucesproject.material_animation.Sample"/>
@@ -37,8 +36,8 @@
                 <TextView
                     android:id="@+id/title"
                     style="@style/MaterialAnimations.TextAppearance.Title.Inverse"
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_gravity="center_vertical|start"
                     android:text="@{reveal1Sample.name}"

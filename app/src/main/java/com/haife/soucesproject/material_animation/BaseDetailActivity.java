@@ -27,6 +27,7 @@ public class BaseDetailActivity extends AppCompatActivity {
         return true;
     }
 
+
     @SuppressWarnings("unchecked")
     void transitionTo(Intent intent) {
         Pair<View, String>[] pair = TransitionHelper.createSafeTransitionParticipants(this, true);

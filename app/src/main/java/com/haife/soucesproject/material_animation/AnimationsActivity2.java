@@ -59,14 +59,6 @@ public class AnimationsActivity2 extends BaseDetailActivity {
                 getWindow().getEnterTransition().removeListener(this);
                 TransitionManager.go(scene0);
             }
-
-
-
-
-
-
-
-
         });
     }
 
