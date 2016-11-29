@@ -6,11 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.transition.Slide;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
-import android.view.Gravity;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -39,10 +38,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void setupSamples() {
-        samples = Arrays.asList(new Sample(ContextCompat.getColor(this, R.color.sample_red), "Transitions"),
+        samples = Arrays.asList(
+                new Sample(ContextCompat.getColor(this, R.color.sample_red), "Transitions"),
                 new Sample(ContextCompat.getColor(this, R.color.sample_blue), "Shared Elements"),
                 new Sample(ContextCompat.getColor(this, R.color.sample_green), "View animations"),
-                new Sample(ContextCompat.getColor(this, R.color.sample_yellow), "Circular Reveal Animation"));
+                new Sample(ContextCompat.getColor(this, R.color.sample_yellow), "Circular Reveal Animation")
+        );
     }
 
     private void setupToolbar() {
@@ -58,5 +59,4 @@ public class MainActivity extends AppCompatActivity {
         SamplesRecyclerAdapter adapter = new SamplesRecyclerAdapter(this, samples);
         recyclerView.setAdapter(adapter);
     }
-
 }

@@ -12,6 +12,7 @@ import android.transition.Fade;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
 import android.transition.TransitionManager;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
@@ -28,7 +29,7 @@ import com.haife.soucesproject.material_animation.databinding.ActivityRevealBind
  * Created by haife
  * on 2016/11/28.
  */
-public class RevealActivity extends BaseDetailActivity {
+public class RevealActivity extends BaseDetailActivity implements View.OnTouchListener {
     private static final int DELAY = 100;
     private RelativeLayout bgViewGroup;
     private Toolbar toolbar;
@@ -67,10 +68,36 @@ public class RevealActivity extends BaseDetailActivity {
         btnRed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 revealRed();
             }
         });
+        findViewById(R.id.square_blue).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                revealBlue();
+            }
+        });
+        findViewById(R.id.square_yellow).setOnTouchListener(this);
+    }
+
+    private void revealYellow(float cx,float cy) {
+        animateRevealColorFromCoordinates(bgViewGroup, R.color.sample_yellow, (int)cx, (int)cy);
+        body.setText(R.string.reveal_body1);
+        body.setTextColor(ContextCompat.getColor(this, R.color.theme_yellow_background));
+    }
+
+    private void revealBlue() {
+        animateButtonsOut();
+        Animator animator = animateRevealColorFromCoordinates(bgViewGroup, R.color.sample_blue, bgViewGroup.getWidth() / 2, bgViewGroup.getWidth() / 2);
+        animator.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                animateButtonIn();
+                super.onAnimationEnd(animation);
+            }
+        });
+        body.setText(R.string.reveal_body4);
+        body.setTextColor(ContextCompat.getColor(this, R.color.theme_blue_background));
     }
 
     private void revealRed() {
@@ -84,7 +111,7 @@ public class RevealActivity extends BaseDetailActivity {
 
             @Override
             public void onTransitionEnd(Transition transition) {
-                animateRevealColor(bgViewGroup,R.color.sample_red);
+                animateRevealColor(bgViewGroup, R.color.sample_red);
                 body.setText(R.string.reveal_body3);
                 body.setTextColor(ContextCompat.getColor(RevealActivity.this, R.color.theme_red_background));
                 btnRed.setLayoutParams(params);
@@ -264,4 +291,13 @@ public class RevealActivity extends BaseDetailActivity {
     }
 
 
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        if (event.getAction()==MotionEvent.ACTION_DOWN){
+            if (v.getId() == R.id.square_yellow) {
+                revealYellow(event.getRawX(),event.getRawY());
+            }
+        }
+        return false;
+    }
 }

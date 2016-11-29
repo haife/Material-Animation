@@ -15,7 +15,7 @@ public class Sample implements Serializable{
         this.name = name;
     }
     @BindingAdapter("colorTint")
-    public static void setColorTint(ImageView view, @ColorInt int color) {
+    public static void setColorTint(ImageView view,@ColorInt int color) {
         DrawableCompat.setTint(view.getDrawable(), color);
     }
 

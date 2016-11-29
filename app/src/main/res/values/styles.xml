@@ -11,9 +11,7 @@
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowAllowEnterTransitionOverlap">false</item>
         <item name="android:windowAllowReturnTransitionOverlap">false</item>
-
-        <item name="android:titleTextAppearance">@style/MaterialAnimations.TextAppearance.Title
-        </item>
+        <item name="android:titleTextAppearance">@style/MaterialAnimations.TextAppearance.Title</item>
         <item name="android:windowBackground">@color/light_grey</item>
     </style>
 
