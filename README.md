@@ -255,7 +255,7 @@ TransitionManager.beginDelayedTransition(viewRoot);
 
 Size | Position
 ---|---
-![image](http://olcfylmob.bkt.clouddn.com/view_layout_anim.gif-sizeImage) | ![image](http://olcfylmob.bkt.clouddn.com/change_size-sizeImage.gif)
+![image](http://olcfylmob.bkt.clouddn.com/view_layout_anim.gif-sizeImage) | ![image](http://olcfylmob.bkt.clouddn.com/change_size.gif-sizeImage)
 
 
 ## 4.共享元素+循环动画
