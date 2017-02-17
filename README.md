@@ -177,7 +177,6 @@ startActivity(intent,option.toBundle());
 
 ![image](http://olcfylmob.bkt.clouddn.com/shared_element_anim.gif-sizeImage)
 
-
 ## 那么在Fragment之间怎么实现呢？
 
 ### a) 允许过度动画
