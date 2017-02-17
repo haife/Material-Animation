@@ -175,7 +175,7 @@ startActivity(intent,option.toBundle());
 
 **这段代码将生成这个美丽的过渡动画:**
 
-![image](http://olcfylmob.bkt.clouddn.com/shared_element_anim.gif-sizeIamge)
+![image](http://olcfylmob.bkt.clouddn.com/shared_element_anim.gif-sizeImage)
 
 
 ## 那么在Fragment之间怎么实现呢？
