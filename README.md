@@ -215,7 +215,7 @@ startActivity(intent,option.toBundle());
 
 **效果如下**
 
-![image](http://olcfylmob.bkt.clouddn.com/shared_element_no_overlap.gif-sizeImage)
+![image](https://raw.githubusercontent.com/lgvalle/Material-Animations/master/screenshots/shared_element_no_overlap.gif)
 
 
 ## 3.动画视图布局元素
@@ -254,7 +254,7 @@ TransitionManager.beginDelayedTransition(viewRoot);
 
 Size | Position
 ---|---
-![image](http://olcfylmob.bkt.clouddn.com/view_layout_anim.gif-sizeImage) | ![image](http://olcfylmob.bkt.clouddn.com/change_size.gif-sizeImage)
+![image](https://raw.githubusercontent.com/lgvalle/Material-Animations/master/screenshots/view_layout_anim.gif) | ![image](https://raw.githubusercontent.com/lgvalle/Material-Animations/master/screenshots/shared_element_no_overlap.gif)
 
 
 ## 4.共享元素+循环动画
@@ -262,7 +262,7 @@ Size | Position
 > 循环显示只是一个动画显示或隐藏一组UI元素。它可以自API21或以上使用。
 
 ![image](
-http://olcfylmob.bkt.clouddn.com/shared_reveal_anim.gif-sizeImage)
+https://raw.githubusercontent.com/lgvalle/Material-Animations/master/screenshots/shared_reveal_anim.gif)
 
 
 **上图发生了几个步骤？了解了之前的共享元素后我们知道。**
@@ -350,7 +350,7 @@ private void animateButtonIn() {
 
 > 红色小球的效果
 
-![image](http://olcfylmob.bkt.clouddn.com/reveal_red.gif-sizeImage)
+![image](https://raw.githubusercontent.com/lgvalle/Material-Animations/master/screenshots/reveal_red.gif)
 
 
 **红球运动轨迹 res/transition/changebounds_with_arcmotion.xml(这里不是共享动画)**
