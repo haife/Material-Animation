@@ -29,7 +29,7 @@
 
 Explode | Slide | Fade
 ---|---|---
-![image](https://raw.githubusercontent.com/lgvalle/Material-Animations/master/screenshots/transition_explode.gif)|![image](http://olcfylmob.bkt.clouddn.com/transition_slide.gif)|![image](https://raw.githubusercontent.com/lgvalle/Material-Animations/master/screenshots/transition_fade.gif)
+![image](https://raw.githubusercontent.com/lgvalle/Material-Animations/master/screenshots/transition_explode.gif)|![image](https://raw.githubusercontent.com/lgvalle/Material-Animations/master/screenshots/transition_slide.gif)|![image](https://raw.githubusercontent.com/lgvalle/Material-Animations/master/screenshots/transition_fade.gif)
 
  实现这些效果可以通过xml方式或者在直接在类中实现,下面是Fade的实现方式。
  
