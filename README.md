@@ -96,7 +96,7 @@ Explode | Slide | Fade
 
 如果未定义返回或重新输入，Android将按照你之前设定的默认的版本。但是如果你定义它们，你可以有不同的转换进入和退出活动。(如下图)
 
-![image](http://olcfylmob.bkt.clouddn.com/transition_B_to_A.png)
+![image](https://raw.githubusercontent.com/lgvalle/Material-Animations/master/screenshots/transition_fade.gif)
 
  - 当你从ActivityB返回到ActivityA的时候。需要重新制定ActivityB的退出动画，可以通过如下方式
 
